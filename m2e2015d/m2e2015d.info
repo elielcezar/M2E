@@ -1,0 +1,21 @@
+
+name = m2e2015d
+description = Tema exclusivo para o site da Agencia M2E
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/geral.css
+stylesheets[all][] = css/fonts.css
+
+regions[header] = Header
+regions[extras] = Extras Topo
+regions[content] = Content
+regions[footer] = Footer
+
+settings[shortcut_module_link] = 0
+
+version = "7.12"
+project = "drupal"
+datestamp = "1328134560"
+
