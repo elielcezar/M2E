@@ -1,0 +1,33 @@
+
+name = m2e2015 E
+description = Tema exclusivo para o site da Agencia M2E
+package = Core
+version = VERSION
+core = 7.x
+
+
+stylesheets[all][] = css/bootstrap-theme.css
+stylesheets[all][] = css/animate.css
+stylesheets[all][] = css/typed.css
+stylesheets[all][] = css/geral.css
+stylesheets[all][] = css/sidebar.css
+stylesheets[all][] = css/home.css
+stylesheets[all][] = css/landingpages.css
+
+stylesheets[all][] = css/wodry.css
+
+
+regions[header] = Header
+regions[extras] = Extras Topo
+regions[content] = Content
+regions[footer] = Footer
+
+base theme = seven
+
+settings[shortcut_module_link] = 0
+
+plugins[panels][layouts] = layouts
+
+version = "7.12"
+project = "drupal"
+datestamp = "1328134560"

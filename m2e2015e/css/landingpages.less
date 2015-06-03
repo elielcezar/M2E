@@ -1,0 +1,314 @@
+// out: landingpages.css, sourcemap: false, compress: true
+
+@import url("padroes.less");
+
+/*--- LANDING PAGES --------------------------------------------------------------------------------------------*/
+.landing-page{
+
+    header{
+
+        min-height: 550px;
+        background-size: 100% 100% !important;
+
+        .chamada{
+            /*float: left;*/
+            width: 100%;
+            margin-top: 100px;
+        }
+        h1#page-title{
+            margin: 25px 0;
+            text-transform: none;
+            letter-spacing: -2px;
+            line-height: 1.2em;
+        }
+    }
+
+    #diferenciais{
+        padding: 100px 0 50px 0;
+        background: #fbfbfb;
+
+        .item{
+            min-height: 300px;
+            .transition;
+
+            &:hover{background: #fbfbfb;}
+        }
+
+        ul{
+            padding: 0;
+            list-style-type: none;
+            li{
+                margin: 0 0 20px 10px;
+                text-align: justify;
+            }
+            li:before {
+              content: '\f058';
+              font-family: FontAwesome;
+              display: inline-block;
+              width: 1.2em;
+              margin: 0 .4em 0 -1.6em;
+              color: @corpadrao;
+            }
+            strong{color: @corpadrao;}
+        }
+    }
+
+    #contato{
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding: 75px 0;
+        background: #fbfbfb;
+        .transition;
+
+        h4{margin-bottom: 50px;}
+
+         #webform-ajax-wrapper-13{
+            max-width: 700px;
+            margin: auto;
+        }
+
+        &:hover{background: #f5f5f5;}
+    }
+
+
+
+}
+
+
+/*--- LANDING PAGE WEBDESIGN ----*/
+.page-webdesign{
+
+    div.m2e a{ background: transparent url(../img/logo-m2e.png) 0 0 no-repeat; }
+
+    header{
+        color: #333;
+        background: #dddbd5 url(../img/bg_landing_webdesign.jpg) top left no-repeat;
+
+        h1#page-title strong{color: @corpadrao;}
+
+        .chamada p{font-size: 1.6em;}
+
+        img{margin-top: 50px;}
+
+    }
+
+
+    strong{text-transform: uppercase;}
+
+    #diferenciais{
+        text-align: center;
+        img{
+                margin: 25px auto;
+                opacity: .6;
+            }
+    }
+
+    /*#call{display: none;}*/
+
+}
+
+
+/*--- LANDING PAGE SOCIAL MEDIA ----*/
+.page-midias-sociais{
+
+    header{
+        background: #16181d url(../img/bg_socialmedia.jpg) top center fixed no-repeat;
+        background-size: auto !important;
+        min-height: 500px;
+
+        #menu-toggle{background: #383b40;}
+
+        .chamada {
+            p{font-size: 1.6em;}
+        }
+    }
+
+    #principal {
+
+        ul{
+            max-width: 700px;
+            margin: auto;
+        }
+        #destaque{
+
+            padding: 100px 0;
+            text-align: center;
+            p{
+                max-width: 900px;
+                margin: auto;
+                font-size: 1.4em;
+            }
+        }
+        #diferenciais{
+            padding: 50px 0;
+            background: #f5f5f5;
+            font-size: 1.2em;
+        }
+
+        #tabela-precos{
+            padding: 50px 0;
+        }
+    }
+
+   .pricing-table {
+      padding-bottom: 30px;
+    }
+    .pricing-table .pricing-header {
+      position: relative;
+      background: @corpadrao;
+      padding: 10px;
+      text-align: center;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+    .pricing-table .pricing-header .pricing-title {
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 700;
+        margin: 0;
+    }
+   .pricing-table .pricing-header .pricing-rate {
+      font-size: 60px;
+      font-weight: 700;
+      color: #ffffff;
+      position: relative;
+      text-align: center;
+        margin: 0;
+    }
+    .pricing-table .pricing-header .pricing-rate sup {
+      font-size: 24px;
+      position: relative;
+      top: -25px;
+    }
+    .pricing-table .pricing-header .pricing-rate span {
+      font-size: 16px;
+      text-transform: uppercase;
+        top: -15px;
+    }
+    .pricing-list {
+      padding: 20px 0 40px 0;
+      background: #ffffff;
+      border: 1px solid #e3e3e3;
+    }
+   .pricing-list ul {
+      padding: 0px;
+      display: table;
+      margin: 0px auto;
+    }
+    .pricing-list ul li {
+      list-style: none;
+      border-bottom: 1px solid #EAECEB;
+      /*color: #bdc3c7;*/
+      font-size: 16px;
+      line-height: 42px;
+    }
+    .pricing-list ul li:last-child {
+      border: none;
+    }
+    .pricing-list ul li i {
+      margin-right: 12px;
+      color: #bdc3c7;
+    }
+    .pricing-list ul li span {
+      color: #34495e;
+    }
+
+}
+
+
+/*--- LANDING PAGE LOGOS ----*/
+.page-logos{
+
+    div.m2e a{ background: transparent url(../img/logo-m2e.png) 0 0 no-repeat; }
+
+    header{
+        color: #666;
+        background: #fff;
+
+         h1#page-title strong{color: @corpadrao;}
+
+        .chamada p{font-size: 1.6em;}
+    }
+
+
+    #principal {
+
+        background: #f5f5f5;
+
+        #diferenciais{
+            padding: 50px 0;
+
+            P{font-size: 1.1em;}
+        }
+
+
+    }
+
+}
+
+
+/*--- LANDING PAGE ADS -----------------------------------------------------------------------*/
+
+.page-ads{
+
+    #menu-toggle{background: #2f4169;}
+
+    #menu-principal{
+         li:hover{border-left: 3px solid #e9eaed;}
+    }
+
+    header{
+        background: #46629e;
+        .botao:hover{background: #4ab09d;}
+
+        img{margin-top: 50px;}
+    }
+
+    #principal {
+        #destaque{
+            /*text-align: center;
+            font-size: 1.2em;*/
+            background: #e9eaed;
+            color: #20293c;
+            padding: 50px 0;
+
+
+        }
+        #diferenciais{
+            text-align: center;
+            margin: 50px 0;
+            padding: 0;
+
+            .item{
+                padding: 0 7%;
+                margin-bottom: 25px;
+            }
+
+            img{
+                margin: 25px auto;
+                opacity: .7;
+            }
+
+
+        }
+
+
+
+    }
+}
+
+/*--- LANDING PAGE LOGOS -----------------------------------------------------------------------*/
+.page-logos{
+    #destaque{
+            /*text-align: center;
+            font-size: 1.2em;*/
+            background: #f5f5f5;
+            padding: 50px 0;
+
+            /*.container{max-width: 900px;}*/
+        }
+}
