@@ -1,11 +1,8 @@
-// out: home.css, sourcemap: false, compress: true
-
 @import url("padroes.less");
 
 /* topo */
 .front header{
-	position: relative;
-	height: 100%;
+	position: relative;	
     min-height: 100%;
     display: block;
 	background: #1d1d22;
@@ -19,13 +16,8 @@
 		background: #383b40;
 	}
 
-
-
     .chamada{
-        width: 100%;
-        position: absolute;
-        bottom: 50px;
-        left: 0;
+        width: 100%;        
         float: left;
 
         h2{
@@ -33,16 +25,6 @@
             font-weight: 700;
             font-size: 4em;
             margin-right: 10px;
-
-            /*.wodryRX{
-                display: inline-block;
-                margin-bottom: -15px;
-                overflow: hidden;
-                background: @corpadrao;
-                color: #333;
-                padding-left: 15px;
-                padding-right: 15px;
-            }*/
         }
 
     }
@@ -50,14 +32,18 @@
     .destaque{
         font-size: 1.6em;
         color: #f5f5f5;
+        margin-bottom: 15px;
     }
 
     .botao{
-
         letter-spacing: -1px;
+		width: 300px;
+		margin: 0 10px;
+
          i{
             font-size: 1.2em;
             margin-left: 10px;
+            margin-right: 10px;
         }
     }
 
@@ -65,20 +51,44 @@
 }
 
 
-
-
 /*--- SECOES ---*/
 .front section{
     float: left;
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
+
+	.chamada {
+		margin-bottom: 50px;
+
+		p{
+			font-size: 1.6em;
+			color: #8e8e8e;
+		}
+	}
 }
 
 /*--- WEBDESIGN -----------------------------------------------------------------------------------*/
 .front #webdesign{
     border-bottom: 1px solid #eee;
 
+	padding-bottom: 150px;
+
+	h3{letter-spacing: -2px;}
+
     img{margin-top: 25px;}
+
+    .diferenciais p{
+    	padding-left: 30px;
+
+    	&:before{
+	    	font-family: FontAwesome;
+	    	content:'\f00c';    	    	
+	    	display: inline-block;	    	
+	    	margin: 0 12px 0 -30px;
+	    	color: @corpadrao;
+    	}
+    }
+    
 }
 
 /*--- SOCIAL MEDIA --------------------------------------------------------------------------------*/
@@ -86,6 +96,8 @@
     color: #fff;
     background: #16181d url(../img/bg_socialmedia.jpg) top left no-repeat;
     padding: 75px 0;
+
+	p{color: #fff;}
 
     h3{color: #fff;}
 }
@@ -96,17 +108,63 @@
     border-bottom: 1px solid #eee;
     background: #fff;
 
-    h3{margin-top: 45px;}
+	div{padding: 5px;}
 
-    img{margin-top: 20px;}
+    h3{margin-top: 45px; letter-spacing: -2px;}
+
 }
 
-/*--- PORTFOLIO --------------------------------------------------------------------------------- */
+
 
 
 /*--- ADS GOOGLE E FACEBOOK ----------------------------------------------------------------------*/
 .front #ads{
     background: #f5f5f5;
 
-    img{margin-top: 25px;}
+	.item{
+		margin-bottom: 45px;
+
+		div{padding: 7px;}
+	}
+
+	h5{text-transform: uppercase;}
+
+	img{margin-top: 7px; height: 80px;}
+
 }
+
+/***************************************************************************/
+@media (max-width: 460px){
+	header i{display: none !important;}
+}
+@media (max-width: 767px){
+
+  .front h1.m2e img{
+  	margin: 20px auto;
+  	max-width: 200px !important;
+  }
+  .front header h2,
+  .front header .destaque{display: none;}  
+
+  .front header .botao{
+  	width: 85%;
+  	margin: 0 0 20px 0;
+  }  
+
+  .front #socialmedia{background-image: none;}
+
+}
+
+@media (min-width: 768px){
+
+	.front header{height: 100%;}
+
+	.front header .chamada{
+		position: absolute;
+        bottom: 25px;
+        left: 0;
+	}
+
+}
+
+

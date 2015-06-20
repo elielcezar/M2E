@@ -6,7 +6,6 @@ version = VERSION
 core = 7.x
 
 
-stylesheets[all][] = css/bootstrap-theme.css
 stylesheets[all][] = css/animate.css
 stylesheets[all][] = css/typed.css
 stylesheets[all][] = css/geral.css

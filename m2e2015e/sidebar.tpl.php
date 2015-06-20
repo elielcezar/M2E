@@ -2,20 +2,25 @@
 
 <div id="sidebar">
 
-    <div id="menu-principal">
+    
 
-        <div class="container">
-            <ul class="menu">
-                <li><a href="<?php print $GLOBALS['base_path']; ?>"><i class="fa fa-home"></i><br/> Página Inicial</a></li>
-                <li><a href="<?php print $GLOBALS['base_path']; ?>webdesign"><i class="fa fa-code"></i><br/> Desenvolvimento de Sites</a></li>
-                <li><a href="<?php print $GLOBALS['base_path']; ?>midias-sociais"><i class="fa fa-share-alt-square"></i><br/> Mídias Sociais</a></li>
-                <li><a href="<?php print $GLOBALS['base_path']; ?>logos"><i class="fa fa-paper-plane-o"></i><br/>Logotipos / Identidade Visual</a></li>
-                <li><a href="<?php print $GLOBALS['base_path']; ?>ads"><i class="fa fa-paper-plane-o"></i><br/> Anúncios no Google e Facebook</a></li>
-                <li><a href="<?php print $GLOBALS['base_path']; ?>contato"><i class="fa fa-paper-plane-o"></i><br/> Entre em Contato</a></li>
-            </ul>
-        </div>
+        
+        <ul class="menu">
+            <li><a data-toggle="pill" href="#topo"><i class="fa fa-home"></i> Página Inicial</a></li>
+            <li><a data-toggle="pill" href="#webdesign"><i class="fa fa-code"></i> Desenvolvimento de Sites</a></li>
+            <li><a data-toggle="pill" href="#socialmedia"><i class="fa fa-thumbs-o-up"></i> Mídias Sociais</a></li>
+            <li><a data-toggle="pill" href="#logos"><i class="fa fa-shield"></i> Logotipos / Identidade Visual</a></li>
+            <li><a data-toggle="pill" href="#ads"><i class="fa fa-list-alt"></i> Anúncios no Google e Facebook</a></li>
+            <li><a data-toggle="pill" href="#portfolio"><i class="fa fa-suitcase"></i> Portfólio</a></li>
+            <li><a href="#modalcontato" data-toggle="modal"><i class="fa fa-paper-plane-o"></i> Entre em Contato</a></li>            
+        </ul>
 
-    </div><!-- menu principal -->
+
+
+
+    
+
+
 
 </div><!-- sidebar -->
 
